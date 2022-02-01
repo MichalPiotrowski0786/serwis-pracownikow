@@ -1,5 +1,5 @@
-# Seismity
-## 3D Visualizer of recent Earthquakes
+# Serwis Pracownikow (Employee Management App)
+## Example of simple service to managa employees data
 
 
 
@@ -8,7 +8,7 @@ Technologies used:
 | Technology | Link |
 | :---: | :---: |
 | IDE: VS Code | https://code.visualstudio.com |
-| Language: javascript | https://developer.mozilla.org/pl/docs/Web/JavaScript |
+| Language: Javascript | https://developer.mozilla.org/pl/docs/Web/JavaScript |
 | Main library: React | https://reactjs.org |
 | UI library: MUI(Material UI) | https://mui.com |
 
