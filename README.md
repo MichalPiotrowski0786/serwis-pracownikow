@@ -37,27 +37,27 @@ Copyright laws:
 Screenshots:
 <p align="center">
   <kbd>
-    <img src="/Assets/Screenshots/0.png?raw=true">
+    <img src="screenshots/0.png?raw=true">
   </kbd>
 </p>
 <p align="center">
   <kbd>
-    <img src="/Assets/Screenshots/1.png?raw=true">
+    <img src="screenshots/1.png?raw=true">
   </kbd>
 </p>
 <p align="center">
   <kbd>
-    <img src="/Assets/Screenshots/3.jpeg?raw=true">
+    <img src="screenshots/3.jpeg?raw=true">
   </kbd>
 </p>
 <p align="center">
   <kbd>
-    <img src="/Assets/Screenshots/4.png?raw=true">
+    <img src="screenshots/4.png?raw=true">
   </kbd>
 </p>
 <p align="center">
   <kbd>
-    <img src="/Assets/Screenshots/2.png?raw=true">
+    <img src="screenshots/2.png?raw=true">
   </kbd>
 </p>
 
