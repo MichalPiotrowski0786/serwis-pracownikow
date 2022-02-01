@@ -1,70 +1,101 @@
-# Getting Started with Create React App
+# Seismity
+## 3D Visualizer of recent Earthquakes
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
 
-In the project directory, you can run:
+Technologies used:
 
-### `npm start`
+| Technology | Link |
+| :---: | :---: |
+| IDE: VS Code | https://code.visualstudio.com |
+| Language: C# | https://docs.microsoft.com/pl-pl/dotnet/csharp |
+| Version Control: Git & Github | https://github.com |
+| Unity Engine | https://unity.com/ |
+| Web Request | https://docs.microsoft.com/pl-pl/dotnet/api/system.net.webrequest?view=net-5.0 |
+| USGS Earthquake CSV feed | https://earthquake.usgs.gov/earthquakes/feed/v1.0/csv.php |
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
 
-### `npm test`
+Unity Components used:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+|  |  |  |  | 
+| :---: | :---: | :---: | :---: |
+| Transform | Camera | Box Collider | Rigidbody | 
+| Post Process Volume | Camera Controller | Light | Mesh Filter |
+| Mesh Renderer | Sphere Collider | Earthquakes Controller | Rect Transform |
+| Canvas | Canvas Scaler | Graphic Raycaster | UI Controller |
+| Canvas Renderer | Image | Dropdown | Text |
+| Scroll Rect | Button | Event System | Standalone Input Module |
+| Material | Shader | .cs | .csv |
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Functional requirements:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+| Id | Category | Name | Description | Required?(Y/N) |
+| :---: | :---: | :---: | :---: | :---: |
+| WF0 | Function | 3D Visualization | Displaying Earth seismic activity in 3D space placed onto Earth 3D Model | Y |
+| WF1 | Function | Downloading data | Downloading data from USGS CSV feed with one-minute interval | Y |
+| WF3 | Function | Camera Controller | Camera Controller responsible for moving user view. Includes: translations, rotations and zoom | Y |
+| WF2 | Graphics | UI | Responsible for displaying additional informations, buttons and lists  | Y |
+| WF2 | Testing | Unit Tests | Made to check correct operating of our code and functions | Y |
+| WF4 | Graphics | Post-Processsing | Handles graphical enhacements to visualizator like: Bloom, Sharpen, Motion Blur, Vignette etc. | N |
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Non-Functional requirements:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+| Id | Name | Description | Required?(Y/N) |
+| :---: | :---: | :---: | :---: |
+| WNF0 | Reliability | Frequent code reviews, fixing errors and making tests | Y |
+| WNF1 | Effectivness | Optimizing App, to use less resources and lower load on CPU and RAM | Y |
+| WNF3 | Compatibility | Checing if app is capable on working with most of desktop devices. Mobile devices in future | Y |
+| WNF2 | Honesty | Being honest with our progress, problems and solutions | Y |
+| WNF4 | Usability | Making sure that our actions make sense and things that we add are needed | Y |
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Bugs:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+| Bug | Description | Fixed?(✓/X) | Possible fix |
+| :---: | :---: | :---: | :---: |
+| Post-Processing not applied | Post-Processing not applied when launching visualization | ✓ | Reimport Post-Processing volume and check references |
+| Incorrect positions | Earthquakes positions are offset from their local locations with no evident pattern | X | Try new math methods or replace current Earth 3D Model with better one |
 
-### Code Splitting
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-### Analyzing the Bundle Size
+Copyright laws:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+| Authors | Licension | Link |
+| :---: | :---: | :---: |
+| Oskar Cyms, Paweł Rogoża, Michał Piotrowski | Creative Commons(CC BY-NC-ND) | https://creativecommons.org/licenses/by-nc-nd/4.0/legalcode |
 
-### Making a Progressive Web App
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-### Advanced Configuration
+Screenshots:
+<p align="center">
+  <kbd>
+    <img src="/Assets/Screenshots/0.png?raw=true">
+  </kbd>
+</p>
+<p align="center">
+  <kbd>
+    <img src="/Assets/Screenshots/1.png?raw=true">
+  </kbd>
+</p>
+<p align="center">
+  <kbd>
+    <img src="/Assets/Screenshots/3.jpeg?raw=true">
+  </kbd>
+</p>
+<p align="center">
+  <kbd>
+    <img src="/Assets/Screenshots/4.png?raw=true">
+  </kbd>
+</p>
+<p align="center">
+  <kbd>
+    <img src="/Assets/Screenshots/2.png?raw=true">
+  </kbd>
+</p>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
