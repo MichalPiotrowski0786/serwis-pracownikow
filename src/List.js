@@ -22,7 +22,13 @@ const StyledTableCell = styled(TableCell)(({ theme }) => ({
 }));
 
 function List({lastEntry}) {
-  const employees = lastEntry;
+  const employees = [
+    {n: "John",s: "Wilcox",j: "CEO", l: "DE"},
+    {n: "Jack",s: "Captain",j: "MG", l: "CZ"},
+    {n: "Artur",s: "Kowalski",j: "SC", l: "PL"},
+    {n: "Anna",s: "Falarowska",j: "INT", l: "UK"},
+    {n: "Pierre",s: "Buchet",j: "C", l: "FR"},
+  ];
   return (
     <TableContainer component={Paper} sx={{ mt: 5}}>
       <Table sx={{ minWidth: 700}} aria-label="simple table">
