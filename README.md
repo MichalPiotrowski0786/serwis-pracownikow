@@ -47,17 +47,17 @@ Screenshots:
 </p>
 <p align="center">
   <kbd>
-    <img src="screenshots/3.jpeg?raw=true">
+    <img src="screenshots/2.png?raw=true">
+  </kbd>
+</p>
+<p align="center">
+  <kbd>
+    <img src="screenshots/3.png?raw=true">
   </kbd>
 </p>
 <p align="center">
   <kbd>
     <img src="screenshots/4.png?raw=true">
-  </kbd>
-</p>
-<p align="center">
-  <kbd>
-    <img src="screenshots/2.png?raw=true">
   </kbd>
 </p>
 
