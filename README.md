@@ -63,4 +63,9 @@ Screenshots:
     <img src="screenshots/4.png?raw=true">
   </kbd>
 </p>
+<p align="center">
+  <kbd>
+    <img src="screenshots/list.png?raw=true">
+  </kbd>
+</p>
 
